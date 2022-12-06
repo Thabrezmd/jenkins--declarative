@@ -8,16 +8,16 @@ pipeline {
             }
         }
 
-        stage("Test") {
+        stage("Build") {
             steps {
-                echo "Some tests execution here..."
-                echo "1"
+                echo "Some code compilation here..."
             }
         }
 
-        stage("Validate") {
+        stage("Test") {
             steps {
-                echo "Some code compilation here..."
+                echo "Some tests execution here..."
+                echo 1
             }
         }
     }
